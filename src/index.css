@@ -11,3 +11,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.view{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: rgb(8, 19, 57);
+  padding: 30px;
+    box-sizing: border-box;
+}
+
+form{
+  width: 650px;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 7px 6px 15px -4px rgba(0,0,0,0.75);
+  background-color: #f5f7fa;
+}
+
+form > div{
+  margin-bottom: 10px;
+}
+
+form input{
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+  width: 200px;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+form p{
+  margin: 0 0 1px;
+  color: salmon;
+  font-size: 12px;
+}
+
+form > .workplace{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+form > .workplace > span{
+  position: absolute;
+  right: 0;
+  color: #d12a2a;
+  font-weight: bold;
+  cursor: pointer;
+  top: 40px;
+  font-size: 13px;
+}
+
+form > .workplace > div{
+  width: 200px;
+}
+form > .workplace > p{
+  position: absolute;
+  top: 40px;
+}
+
+form > #add{
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #b41f44;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form > #submit{
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: seagreen;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: block;
+}
+
+form > #tooltip{
+  display: flex;
+  position: fixed;
+  top: 50px;
+  width: 380px;
+  max-width: 100%;
+  padding: 5px 10px;
+  background-color: seagreen;
+  color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  box-sizing: border-box;
+  align-items: center;
+  left: 50%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
